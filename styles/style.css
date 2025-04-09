@@ -147,6 +147,57 @@ body {
 
 .card__content {
   padding: 25px;
+  border: 2px solid var(--border-color);
+  border-width: 2px 0 0;
+}
+
+.card__image-container {
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* эффект для 2 */
+.image_grayscale {
+  filter: grayscale(0.8);
+}
+
+/* эффект для 3 */
+.image_saturate {
+  filter: saturate(350%);
+}
+
+/* эффект для 4 */
+.image_hue_rotate {
+  filter: hue-rotate(30deg);
+}
+
+/* эффект для 5 */
+.image_invert {
+  filter: invert(0.8);
+}
+
+/* эффект для 6 */
+.image_sepia {
+  filter: sepia(100%);
+}
+
+/* эффект для 7 */
+.image_blur {
+  filter: blur(20px);
+}
+
+/* эффект для 8 */
+.image_combo_contast_hue_blue {
+  filter: contrast(50%) hue-rotate(-285deg) blur(0.1rem);
 }
 
 .card__paragraph {
