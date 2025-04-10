@@ -18,9 +18,9 @@ body {
   position: relative;
   min-height: 100vh;
   margin: 0;
-  background: var(--bg-pattern);
-  background-repeat: repeat;
-  background-size: 4px 4px;
+  background-image: var(--bg-gradient);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .page {
@@ -163,6 +163,34 @@ body {
   display: block;
   box-sizing: border-box;
   overflow: hidden;
+}
+
+.card__watermark {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  font-family: var(--font-accent);
+  font-size: 14px;
+  padding: 25px;
+  mix-blend-mode: hard-light;
+  text-shadow: -1px 0 var(--bg-color),
+    0 1px var(--bg-color),
+    1px 0 var(--bg-color),
+    0 1px var(--bg-color);
+}
+
+@supports (text-stroke: 1px var(--bg-color)) {
+  .card__watermark {
+    text-stroke: 1px var(--bg-color);
+    text-shadow: none;
+  }
+}
+
+@media(width<= 375px) {
+  .card__watermark {
+    padding: 25px 13px;
+  }
 }
 
 /* эффект для 2 */
