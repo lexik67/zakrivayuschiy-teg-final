@@ -385,13 +385,39 @@
       </article>
 
       <!-- 3 - кнопка -->
-      <button class="button button_icon_xl" type="button">
-        <svg class="icon save-icon" viewBox="0 0 29 28" fill="currentColor">
+      <button
+        class="button button_icon_xl"
+        type="button"
+        onclick="window['dialog-insert-disk'].showModal();"
+        aria-controls="dialog-insert-disk"
+      >
+        <svg class="icon save-icon" viewBox="0 0 28 28" fill="currentColor">
           <use href="./svg/floppy.svg#floppy"/>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </main>
+    
+    <!-- 4 - модальное окно -->
+    <dialog id="dialog-insert-disk" class="dialog">
+      <div class="dialog__content">
+        <div class="dialog__icon">
+          <svg class="icon" viewBox="0 0 28 28" fill="currentColor">
+            <use href="./svg/floppy.svg#floppy"/>
+          </svg>
+        </div>
+        <span class="dialog__text">Вставьте<br> дискету, чтобы продолжить</span>
+      </div>
+      <form>
+        <button
+          class="close button dialog__ok-btn"
+          type="button"
+          onclick="window['dialog-insert-disk'].close();"
+        >
+          <span class="button__text">Ок</span>
+        </button>
+      </form>
+    </dialog>
     <script src="./scripts/set-theme.js"></script>
     <script src="./scripts/like.js"></script>
   </body>
