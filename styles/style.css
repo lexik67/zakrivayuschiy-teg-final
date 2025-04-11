@@ -343,6 +343,16 @@ body {
   padding: 14.5px 20px;
 }
 
+.button:not(.card__icon-button) .button__text {
+  color: var(--btn-accent-color);
+  mix-blend-mode: difference;
+}
+
+.button:not(.card__icon-button) .icon {
+  fill: var(--btn-accent-color);
+  mix-blend-mode: difference;
+}
+
 @media (width <=375px) {
   .button .icon {
     width: 28px;

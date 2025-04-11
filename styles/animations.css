@@ -55,21 +55,9 @@
     transform-origin: left center;
     transition: transform 0.5s ease-in-out;
   }
-  
+
   .button:not(.card__icon-button):hover::after {
     transform: scaleX(1);
-  }
-
-  /* анимация - текст кнопки */
-  .button:not(.card__icon-button) .button__text {
-    color: var(--btn-accent-color);
-    mix-blend-mode: difference;
-  }
-
-  /* анимация - иконка кнопки */
-  .button_icon_xl .icon {
-    fill: var(--btn-accent-color);
-    mix-blend-mode: difference;
   }
   
   /* анимация кнопки сердца */
