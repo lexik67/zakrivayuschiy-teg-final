@@ -15,6 +15,7 @@
   --heart-icon-border: #000000;
   --heart-icon-fill: #FF0000;
   --heart-icon-bg: #ffffff;
+  --btn-accent-color: #ffffff;
   --bg-gradient: repeating-linear-gradient(
       to right,
       #d3d3d3 0 2px,
@@ -42,6 +43,7 @@
   --heart-icon-border: #00CC14;
   --heart-icon-fill: #00CC14;
   --heart-icon-bg: #000000;
+  --btn-accent-color: #00CC14;
   --bg-gradient: repeating-linear-gradient(
       to right,
       #000 0 2px,
@@ -70,6 +72,7 @@
     --heart-icon-border: #00CC14;
     --heart-icon-fill: #00CC14;
     --heart-icon-bg: #000000;
+    --btn-accent-color: #00CC14;
     --bg-gradient: repeating-linear-gradient(
         to right,
         #000 0 2px,
