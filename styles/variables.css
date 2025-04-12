@@ -1,0 +1,30 @@
+/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --font-accent: 'PressStart2P', Arial, fantasy;
+  --font-text: 'Inter-Variable', Arial, sans-serif;
+  --font-weight-bold: 700;
+  --font-weight-regular: 400;
+  --border-color: #000000;
+  --text-color: #000000;
+  --bg-color: #FFFFFF;
+  --like-color: #FF0000;
+  --heart-icon-border: #000000;
+  --heart-icon-fill: #FF0000;
+  --heart-icon-bg: #ffffff;
+  --btn-accent-color: #ffffff;
+  --bg-gradient: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0 2px,
+      transparent 2px 4px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7 0.01%,
+      #1a1a1a 100%
+    );
+}
