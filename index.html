@@ -58,7 +58,7 @@
             class="card__image"
             srcset="./images/article.png 1x, ./images/article-2x.png 2x"
             src="./images/article.png"
-            alt="арт пиксельная машина похожая на food truck"
+            alt="арт пиксельная машина похожая на food truck без эффектов filter"
           />
           <span class="card__watermark">&lt;/html&gt;</span>
         </div>
@@ -101,7 +101,7 @@
             class="card__image image_grayscale"
             srcset="./images/article.png 1x, ./images/article-2x.png 2x"
             src="./images/article.png"
-            alt="арт пиксельная машина похожая на food truck"
+            alt="арт пиксельная машина похожая на food truck с эффектом filter grayscale"
           />
           <span class="card__watermark">&lt;/html&gt;</span>
         </div>
@@ -144,7 +144,7 @@
             class="card__image image_saturate"
             srcset="./images/article.png 1x, ./images/article-2x.png 2x"
             src="./images/article.png"
-            alt="арт пиксельная машина похожая на food truck"
+            alt="арт пиксельная машина похожая на food truck c эффектом saturate"
           />
           <span class="card__watermark">&lt;css&gt;</span>
         </div>
@@ -187,7 +187,7 @@
             class="card__image image_hue_rotate"
             srcset="./images/article.png 1x, ./images/article-2x.png 2x"
             src="./images/article.png"
-            alt="арт пиксельная машина похожая на food truck"
+            alt="арт пиксельная машина похожая на food truck с эффектом hue rotate"
           />
           <span class="card__watermark">&lt;desigions&gt;</span>
         </div>
@@ -230,7 +230,7 @@
             class="card__image image_invert"
             srcset="./images/article.png 1x, ./images/article-2x.png 2x"
             src="./images/article.png"
-            alt="арт пиксельная машина похожая на food truck"
+            alt="арт пиксельная машина похожая на food truck с эффектом color invert"
           />
           <span class="card__watermark">care</span>
         </div>
@@ -273,7 +273,7 @@
             class="card__image image_sepia"
             srcset="./images/article.png 1x, ./images/article-2x.png 2x"
             src="./images/article.png"
-            alt="арт пиксельная машина похожая на food truck"
+            alt="арт пиксельная машина похожая на food truck с эффектом sepia"
           />
           <span class="card__watermark">&lt;support&gt;</span>
         </div>
@@ -316,7 +316,7 @@
             class="card__image image_blur"
             srcset="./images/article.png 1x, ./images/article-2x.png 2x"
             src="./images/article.png"
-            alt="арт пиксельная машина похожая на food truck"
+            alt="арт пиксельная машина похожая на food truck с эффектом blur"
           />
           <span class="card__watermark">&lt;lifes-style: none;&gt;</span>
         </div>
@@ -356,10 +356,10 @@
         </h2>
         <div class="card__image-container">
           <img
-            class="card__image image_combo_contast_hue_blue"
+            class="card__image image_combo_contast_hue_blur"
             srcset="./images/article.png 1x, ./images/article-2x.png 2x"
             src="./images/article.png"
-            alt="арт пиксельная машина похожая на food truck"
+            alt="арт пиксельная машина похожая на food truck с комбо эффектом contrast и hue и blur"
           />
           <span class="card__watermark">&lt;experience&gt;</span>
         </div>
@@ -414,13 +414,12 @@
             <use href="./svg/floppy.svg#floppy"/>
           </svg>
         </div>
-        <span class="dialog__text">Вставьте<br> дискету, чтобы продолжить</span>
+        <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <form>
+      <form method="dialog">
         <button
           class="close button dialog__ok-btn"
-          type="button"
-          onclick="window['dialog-insert-disk'].close();"
+          type="submit"
         >
           <span class="button__text">Ок</span>
         </button>

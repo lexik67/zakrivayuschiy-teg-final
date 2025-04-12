@@ -16,12 +16,13 @@
 @media (prefers-reduced-motion: no-preference) {
 
   .theme-menu__button {
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
 
   /* анимация при фокусе пункта темы - появляется подчеркивание */
   .theme-menu__button:focus-visible::after {
     transform-origin: left center;
+    transition: transform 0.5s ease-in-out;
   }
   
   /* анимация возле активного пункта темы - влево вправо  */
@@ -45,7 +46,7 @@
   /* анимация кнопок like и сохранить на память и др */
 
   .button {
-    transition: box-shadow, transform 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
 
   /* анимация тени при фокусе */
@@ -63,7 +64,7 @@
   /* анимация кнопки сердца */
 
   .card__icon-button .like-icon {
-    transition: border, fill  0.3s ease;
+    transition: border 0.3s ease, fill 0.3s ease;
   }
 
   /* исходное состояние */
